@@ -1,0 +1,22 @@
+// utils
+@use "Shared/scss/templates/base/utils/svg-icon";
+
+// components
+
+// layouts
+@use "Shared/scss/templates/base/layouts/document";
+@use "./../layouts/slide";
+
+@mixin page {
+    // utils
+    @include svg-icon.base {
+    }
+
+    // components
+
+    // layouts
+    @include document.base;
+
+    @include slide.base;
+    @include slide.responsive;
+}
